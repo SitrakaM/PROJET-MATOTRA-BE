@@ -66,8 +66,6 @@ public class User {
                 String name= rs.getString("name");
                 String CIN= rs.getString("CIN");
                 String password= rs.getString("password");
-                System.out.println("name: "+this.name+", CIN: "+this.CIN+", password: "+this.password+"");
-                System.out.println("name: "+name+", CIN: "+CIN+", password: "+password+"");
                 if (this.name==name && this.CIN==CIN && this.password==password){
                     return true;
                 }
