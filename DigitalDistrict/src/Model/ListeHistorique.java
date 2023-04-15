@@ -31,9 +31,6 @@ public class ListeHistorique {
                 Statement stm = null;
                 String DBtable="historique";
                 String DBdatetime="datetime";
-
-                LocalDate today = LocalDate.now();
-                String todays= String.valueOf(today);
                 String sql="SELECT * FROM "+DBtable+" WHERE "+DBdatetime+" LIKE '%"+time+"%';";
                 return stm.executeQuery(sql);
             }catch (Exception e){
