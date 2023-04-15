@@ -62,10 +62,7 @@ public class ListeHistorique {
             }
             return null;
         }
-        public static String[] toString(){
-            String[] final;
-            return final;
-        }
+        
 
 }
 
